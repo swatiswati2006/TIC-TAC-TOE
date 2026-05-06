@@ -1,0 +1,14 @@
+import pyperclip
+password={
+    'snap':'abcd',
+    'mail':'acbd',
+    'insta':'abdcd'
+    }
+
+account=input("enter the account name")
+
+if account in password:
+    pyperclip.copy(password[account])
+    print('password copied to clipboard')
+else:
+    print('password not found')
